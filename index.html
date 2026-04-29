@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kishan Kumar | Senior Software Engineer</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- Custom Cursor -->
+  <div class="cursor"></div>
+  <div class="cursor-follower"></div>
+
+  <!-- Scroll Progress Bar -->
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <!-- Navigation -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <div class="nav-logo">KK<span>.</span></div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#hero" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ========== HERO ========== -->
+  <section id="hero">
+    <canvas id="particleCanvas"></canvas>
+    <div class="hero-content">
+      <p class="hero-greeting reveal-up">👋 Hello, I'm</p>
+      <h1 class="hero-name reveal-up">Kishan <span class="gradient-text">Kumar</span></h1>
+      <div class="hero-subtitle reveal-up">
+        <span class="static-text">I'm a </span>
+        <span id="typewriter" class="typewriter-text"></span>
+        <span class="blink-cursor">|</span>
+      </div>
+      <p class="hero-desc reveal-up">
+        Senior Software Engineer specializing in <strong>BRMS & Decision Automation</strong><br />
+        with 4+ years of enterprise experience in banking & insurance domains
+      </p>
+      <div class="hero-buttons reveal-up">
+        <a href="#experience" class="btn btn-primary">
+          <span>View Experience</span>
+          <i class="fas fa-arrow-right"></i>
+        </a>
+        <a href="#contact" class="btn btn-outline">
+          <span>Contact Me</span>
+          <i class="fas fa-paper-plane"></i>
+        </a>
+      </div>
+      <div class="hero-socials reveal-up">
+        <a href="https://linkedin.com/in/kishan-kumar-sonu" target="_blank" aria-label="LinkedIn">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="https://github.com/Kishan-kkumar" target="_blank" aria-label="GitHub">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="mailto:kishansonu1997@gmail.com" aria-label="Email">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </div>
+    </div>
+    <div class="scroll-down">
+      <div class="scroll-dot"></div>
+      <span>Scroll Down</span>
+    </div>
+  </section>
+
+  <!-- ========== ABOUT ========== -->
+  <section id="about">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-number">01</span>
+        <span class="section-tag">About Me</span>
+        <h2>Who I Am</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-image-wrap reveal">
+          <div class="avatar-ring">
+            <div class="avatar-inner">KK</div>
+          </div>
+          <div class="floating-badge badge-1"><i class="fas fa-brain"></i> BRMS</div>
+          <div class="floating-badge badge-2"><i class="fab fa-java"></i> Java</div>
+          <div class="floating-badge badge-3"><i class="fas fa-cogs"></i> ODM</div>
+        </div>
+        <div class="about-text reveal">
+          <h3>Senior Software Engineer &amp; <span class="gradient-text">BRMS Specialist</span></h3>
+          <p>
+            I'm a <strong>Senior Software Engineer</strong> at <strong>Blue Polaris</strong> (formerly Decision Management Solutions),
+            specializing in Business Rules Management Systems and decision automation. I build intelligent
+            decision services that help enterprises automate complex business logic at scale.
+          </p>
+          <p>
+            With 4+ years of hands-on experience across <strong>banking</strong>, <strong>insurance</strong>, and enterprise domains,
+            I bridge the gap between complex business requirements and robust technical implementations
+            using IBM BAW, ODM, BAMOE, ADS, and modern Java frameworks.
+          </p>
+          <div class="about-tags">
+            <span>Problem Solver</span>
+            <span>Team Player</span>
+            <span>Tech Enthusiast</span>
+            <span>Continuous Learner</span>
+          </div>
+          <div class="stats-row">
+            <div class="stat-box">
+              <span class="count" data-target="4">0</span><sup>+</sup>
+              <p>Years Exp.</p>
+            </div>
+            <div class="stat-box">
+              <span class="count" data-target="3">0</span><sup>+</sup>
+              <p>Companies</p>
+            </div>
+            <div class="stat-box">
+              <span class="count" data-target="12">0</span><sup>+</sup>
+              <p>Technologies</p>
+            </div>
+            <div class="stat-box">
+              <span class="count" data-target="4">0</span><sup>+</sup>
+              <p>Certifications</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SKILLS ========== -->
+  <section id="skills">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-number">02</span>
+        <span class="section-tag">Technical Skills</span>
+        <h2>What I Work With</h2>
+      </div>
+      <div class="skill-tabs reveal">
+        <button class="tab-btn active" data-filter="all">All</button>
+        <button class="tab-btn" data-filter="brms">BRMS</button>
+        <button class="tab-btn" data-filter="bpm">BPM</button>
+        <button class="tab-btn" data-filter="backend">Backend</button>
+      </div>
+      <div class="skills-grid" id="skillsGrid">
+
+        <div class="skill-card reveal" data-cat="brms">
+          <div class="skill-card-glow"></div>
+          <div class="skill-icon-wrap"><i class="fas fa-brain"></i></div>
+          <h4>IBM ODM</h4>
+          <p>Operational Decision Manager</p>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar"><div class="skill-fill" data-pct="95"></div></div>
+            <span>95%</span>
+          </div>
+        </div>
+
+        <div class="skill-card reveal" data-cat="brms">
+          <div class="skill-card-glow"></div>
+          <div class="skill-icon-wrap"><i class="fas fa-project-diagram"></i></div>
+          <h4>IBM BAMOE</h4>
+          <p>Business Automation MOE</p>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar"><div class="skill-fill" data-pct="90"></div></div>
+            <span>90%</span>
+          </div>
+        </div>
+
+        <div class="skill-card reveal" data-cat="brms">
+          <div class="skill-card-glow"></div>
+          <div class="skill-icon-wrap"><i class="fas fa-robot"></i></div>
+          <h4>IBM ADS</h4>
+          <p>Automation Decision Services</p>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar"><div class="skill-fill" data-pct="85"></div></div>
+            <span>85%</span>
+          </div>
+        </div>
+
+        <div class="skill-card reveal" data-cat="brms">
+          <div class="skill-card-glow"></div>
+          <div class="skill-icon-wrap"><i class="fas fa-fire-alt"></i></div>
+          <h4>Drools</h4>
+          <p>Business Rule Engine</p>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar"><div class="skill-fill" data-pct="88"></div></div>
+            <span>88%</span>
+          </div>
+        </div>
+
+        <div class="skill-card reveal" data-cat="bpm">
+          <div class="skill-card-glow"></div>
+          <div class="skill-icon-wrap"><i class="fas fa-sitemap"></i></div>
+          <h4>IBM BAW</h4>
+          <p>Business Automation Workflow</p>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar"><div class="skill-fill" data-pct="90"></div></div>
+            <span>90%</span>
+          </div>
+        </div>
+
+        <div class="skill-card reveal" data-cat="bpm">
+          <div class="skill-card-glow"></div>
+          <div class="skill-icon-wrap"><i class="fas fa-code-branch"></i></div>
+          <h4>JBPM / Kogito</h4>
+          <p>Process Management</p>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar"><div class="skill-fill" data-pct="85"></div></div>
+            <span>85%</span>
+          </div>
+        </div>
+
+        <div class="skill-card reveal" data-cat="bpm">
+          <div class="skill-card-glow"></div>
+          <div class="skill-icon-wrap"><i class="fas fa-draw-polygon"></i></div>
+          <h4>BPMN / DMN</h4>
+          <p>Process &amp; Decision Modeling</p>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar"><div class="skill-fill" data-pct="92"></div></div>
+            <span>92%</span>
+          </div>
+        </div>
+
+        <div class="skill-card reveal" data-cat="backend">
+          <div class="skill-card-glow"></div>
+          <div class="skill-icon-wrap"><i class="fab fa-java"></i></div>
+          <h4>Java</h4>
+          <p>Core &amp; Enterprise Java</p>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar"><div class="skill-fill" data-pct="93"></div></div>
+            <span>93%</span>
+          </div>
+        </div>
+
+        <div class="skill-card reveal" data-cat="backend">
+          <div class="skill-card-glow"></div>
+          <div class="skill-icon-wrap"><i class="fas fa-leaf"></i></div>
+          <h4>Spring Boot</h4>
+          <p>Microservices Framework</p>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar"><div class="skill-fill" data-pct="88"></div></div>
+            <span>88%</span>
+          </div>
+        </div>
+
+        <div class="skill-card reveal" data-cat="backend">
+          <div class="skill-card-glow"></div>
+          <div class="skill-icon-wrap"><i class="fas fa-bolt"></i></div>
+          <h4>Quarkus</h4>
+          <p>Cloud-Native Java</p>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar"><div class="skill-fill" data-pct="82"></div></div>
+            <span>82%</span>
+          </div>
+        </div>
+
+        <div class="skill-card reveal" data-cat="backend">
+          <div class="skill-card-glow"></div>
+          <div class="skill-icon-wrap"><i class="fas fa-database"></i></div>
+          <h4>IBM Db2</h4>
+          <p>Enterprise Database</p>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar"><div class="skill-fill" data-pct="78"></div></div>
+            <span>78%</span>
+          </div>
+        </div>
+
+        <div class="skill-card reveal" data-cat="backend">
+          <div class="skill-card-glow"></div>
+          <div class="skill-icon-wrap"><i class="fas fa-exchange-alt"></i></div>
+          <h4>REST APIs</h4>
+          <p>API Design &amp; Integration</p>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar"><div class="skill-fill" data-pct="91"></div></div>
+            <span>91%</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== EXPERIENCE ========== -->
+  <section id="experience">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-number">03</span>
+        <span class="section-tag">Work History</span>
+        <h2>My Experience</h2>
+      </div>
+      <div class="timeline">
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot pulse"></div>
+          <div class="timeline-card">
+            <div class="tl-top">
+              <div class="tl-title-group">
+                <h3>Senior Software Engineer</h3>
+                <span class="tl-company">Blue Polaris <em>(formerly Decision Management Solutions)</em></span>
+              </div>
+              <div class="tl-meta">
+                <span><i class="fas fa-calendar-alt"></i> Mar 2025 – Present</span>
+                <span><i class="fas fa-map-marker-alt"></i> Pune, India</span>
+                <span class="badge-current">Current</span>
+              </div>
+            </div>
+            <ul class="tl-bullets">
+              <li>Designing and automating end-to-end business processes using IBM BAW, including process modeling, task routing, and workflow orchestration</li>
+              <li>Integrating IBM BAW workflows with external decision services and REST APIs to enable seamless process automation</li>
+              <li>Designing and implementing business rules using IBM ODM / BAMOE for enterprise decision automation workflows</li>
+              <li>Developing microservices with Quarkus and Spring Boot to integrate decision services with client systems</li>
+              <li>Collaborating with business analysts to translate business policies into executable rule artifacts (XOM, BOM, BAL)</li>
+              <li>Leading rule migration and modernization projects for enterprise clients</li>
+            </ul>
+            <div class="tl-tags">
+              <span>IBM BAW</span><span>IBM ODM</span><span>BAMOE</span><span>ADS</span><span>Quarkus</span><span>Spring Boot</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="tl-top">
+              <div class="tl-title-group">
+                <h3>Software Engineer</h3>
+                <span class="tl-company">ReactiveWorks IT Solutions Pvt Ltd</span>
+              </div>
+              <div class="tl-meta">
+                <span><i class="fas fa-calendar-alt"></i> Mar 2022 – Mar 2025</span>
+                <span><i class="fas fa-map-marker-alt"></i> Bangalore, India</span>
+              </div>
+            </div>
+            <ul class="tl-bullets">
+              <li>Built and maintained decision management solutions using IBM DMOE, Drools, and Kogito for banking and insurance clients</li>
+              <li>Developed BPMN-based workflow automation using IBM BAMOE / JBPM</li>
+              <li>Implemented DMN decision tables and rule flows to automate complex business logic</li>
+              <li>Integrated decision services with Java Spring Boot REST APIs</li>
+              <li>Participated in client requirement gathering and solution design</li>
+            </ul>
+            <div class="tl-tags">
+              <span>IBM DMOE</span><span>Drools</span><span>Kogito</span><span>JBPM</span><span>Java</span><span>Spring Boot</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="tl-top">
+              <div class="tl-title-group">
+                <h3>Software Engineer Intern</h3>
+                <span class="tl-company">ReactiveWorks IT Solutions Pvt Ltd</span>
+              </div>
+              <div class="tl-meta">
+                <span><i class="fas fa-calendar-alt"></i> Dec 2021 – Mar 2022</span>
+                <span><i class="fas fa-map-marker-alt"></i> Bangalore, India</span>
+              </div>
+            </div>
+            <ul class="tl-bullets">
+              <li>Assisted in developing and testing business rule components using IBM ODM under senior engineer guidance</li>
+              <li>Gained hands-on experience with Java, Spring Boot, and BPMN workflow modeling in an enterprise environment</li>
+            </ul>
+            <div class="tl-tags">
+              <span>IBM ODM</span><span>Java</span><span>BPMN</span><span>Spring Boot</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== EDUCATION ========== -->
+  <section id="education">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-number">04</span>
+        <span class="section-tag">Learning Journey</span>
+        <h2>Education &amp; Certifications</h2>
+      </div>
+      <div class="edu-grid">
+        <div class="edu-card reveal">
+          <div class="edu-icon"><i class="fas fa-graduation-cap"></i></div>
+          <div class="edu-info">
+            <h3>B.Tech in Computer Science</h3>
+            <span class="edu-school">Guru Kashi University</span>
+            <span class="edu-year">2016 – 2020</span>
+            <p>Bachelor of Technology with focus on Computer Science fundamentals, algorithms, and software engineering.</p>
+          </div>
+        </div>
+        <div class="edu-card reveal">
+          <div class="edu-icon"><i class="fas fa-robot"></i></div>
+          <div class="edu-info">
+            <h3>Python &amp; Machine Learning</h3>
+            <span class="edu-school">OceanTech</span>
+            <span class="edu-year">2020</span>
+            <p>Intensive training in Python programming and Machine Learning fundamentals and applications.</p>
+          </div>
+        </div>
+        <div class="edu-card reveal">
+          <div class="edu-icon"><i class="fab fa-java"></i></div>
+          <div class="edu-info">
+            <h3>Core Java</h3>
+            <span class="edu-school">Aptech</span>
+            <span class="edu-year">2018</span>
+            <p>Foundational Java programming, OOP principles, and enterprise development practices.</p>
+          </div>
+        </div>
+      </div>
+
+      <h3 class="sub-heading reveal">Certifications</h3>
+      <div class="cert-grid">
+        <div class="cert-card reveal">
+          <div class="cert-icon"><i class="fas fa-award"></i></div>
+          <span>Anaconda Python</span>
+        </div>
+        <div class="cert-card reveal">
+          <div class="cert-icon"><i class="fas fa-award"></i></div>
+          <span>Prompt Design in Vertex AI Skill Badge</span>
+        </div>
+        <div class="cert-card reveal">
+          <div class="cert-icon"><i class="fas fa-award"></i></div>
+          <span>watsonx.data Technical Sales Intermediate</span>
+        </div>
+        <div class="cert-card reveal">
+          <div class="cert-icon"><i class="fas fa-award"></i></div>
+          <span>watsonx.data Sales Foundation</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CONTACT ========== -->
+  <section id="contact">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-number">05</span>
+        <span class="section-tag">Get In Touch</span>
+        <h2>Contact Me</h2>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-left reveal">
+          <h3>Let's work <span class="gradient-text">together</span></h3>
+          <p>I'm open to new opportunities and collaborations. Whether you have a project in mind or just want to say hi — my inbox is always open!</p>
+          <div class="contact-links">
+            <a href="mailto:kishansonu1997@gmail.com" class="contact-link-item">
+              <div class="cl-icon"><i class="fas fa-envelope"></i></div>
+              <div class="cl-text">
+                <span>Email</span>
+                <p>kishansonu1997@gmail.com</p>
+              </div>
+            </a>
+            <a href="tel:+917004658419" class="contact-link-item">
+              <div class="cl-icon"><i class="fas fa-phone-alt"></i></div>
+              <div class="cl-text">
+                <span>Phone</span>
+                <p>+91 7004658419</p>
+              </div>
+            </a>
+            <a href="https://linkedin.com/in/kishan-kumar-sonu" target="_blank" class="contact-link-item">
+              <div class="cl-icon"><i class="fab fa-linkedin"></i></div>
+              <div class="cl-text">
+                <span>LinkedIn</span>
+                <p>kishan-kumar-sonu</p>
+              </div>
+            </a>
+            <a href="https://github.com/Kishan-kkumar" target="_blank" class="contact-link-item">
+              <div class="cl-icon"><i class="fab fa-github"></i></div>
+              <div class="cl-text">
+                <span>GitHub</span>
+                <p>Kishan-kkumar</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="contact-right reveal">
+          <form id="contactForm" novalidate>
+            <div class="field-group">
+              <input type="text" id="name" placeholder=" " required />
+              <label for="name">Your Name</label>
+              <div class="field-line"></div>
+            </div>
+            <div class="field-group">
+              <input type="email" id="email" placeholder=" " required />
+              <label for="email">Your Email</label>
+              <div class="field-line"></div>
+            </div>
+            <div class="field-group">
+              <input type="text" id="subject" placeholder=" " required />
+              <label for="subject">Subject</label>
+              <div class="field-line"></div>
+            </div>
+            <div class="field-group">
+              <textarea id="message" rows="4" placeholder=" " required></textarea>
+              <label for="message">Your Message</label>
+              <div class="field-line"></div>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">
+              <span>Send Message</span>
+              <i class="fas fa-paper-plane"></i>
+            </button>
+          </form>
+          <div class="form-toast" id="formToast">
+            <i class="fas fa-check-circle"></i>
+            <span>Message sent! I'll get back to you soon.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer>
+    <div class="footer-inner">
+      <p>Designed &amp; Built by <span class="gradient-text">Kishan Kumar</span> · 2025</p>
+      <div class="footer-socials">
+        <a href="https://linkedin.com/in/kishan-kumar-sonu" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/Kishan-kkumar" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="mailto:kishansonu1997@gmail.com"><i class="fas fa-envelope"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <button class="back-top" id="backTop" aria-label="Back to top">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
