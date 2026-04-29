@@ -10,6 +10,21 @@
 </head>
 <body>
 
+  <!-- Preloader -->
+  <div id="preloader">
+    <div class="pre-logo">KK<span>.</span></div>
+    <div class="pre-bar-wrap"><div class="pre-bar" id="preBar"></div></div>
+    <div class="pre-count" id="preCount">0%</div>
+    <div class="pre-curtain pre-top"></div>
+    <div class="pre-curtain pre-bot"></div>
+  </div>
+
+  <!-- Film Grain Overlay -->
+  <canvas id="filmGrain"></canvas>
+
+  <!-- Spotlight -->
+  <div class="spotlight" id="spotlight"></div>
+
   <!-- Custom Cursor -->
   <div class="cursor"></div>
   <div class="cursor-follower"></div>
@@ -40,7 +55,9 @@
     <canvas id="particleCanvas"></canvas>
     <div class="hero-content">
       <p class="hero-greeting reveal-up">👋 Hello, I'm</p>
-      <h1 class="hero-name reveal-up">Kishan <span class="gradient-text">Kumar</span></h1>
+      <h1 class="hero-name" id="heroName">
+        <span id="nameFirst"></span> <span id="nameLast" class="gradient-text glitch-target"></span>
+      </h1>
       <div class="hero-subtitle reveal-up">
         <span class="static-text">I'm a </span>
         <span id="typewriter" class="typewriter-text"></span>
@@ -89,7 +106,9 @@
       <div class="about-grid">
         <div class="about-image-wrap reveal">
           <div class="avatar-ring">
-            <div class="avatar-inner">KK</div>
+            <div class="avatar-inner">
+              <img src="profile.jpg" alt="Kishan Kumar" />
+            </div>
           </div>
           <div class="floating-badge badge-1"><i class="fas fa-brain"></i> BRMS</div>
           <div class="floating-badge badge-2"><i class="fab fa-java"></i> Java</div>
@@ -119,7 +138,7 @@
               <p>Years Exp.</p>
             </div>
             <div class="stat-box">
-              <span class="count" data-target="3">0</span><sup>+</sup>
+              <span class="count" data-target="2">0</span><sup>+</sup>
               <p>Companies</p>
             </div>
             <div class="stat-box">
@@ -521,7 +540,7 @@
   <!-- ========== FOOTER ========== -->
   <footer>
     <div class="footer-inner">
-      <p>Designed &amp; Built by <span class="gradient-text">Kishan Kumar</span> · 2025</p>
+      <p>Designed &amp; Built by <span class="gradient-text">Kishan Kumar</span> · 2026</p>
       <div class="footer-socials">
         <a href="https://linkedin.com/in/kishan-kumar-sonu" target="_blank"><i class="fab fa-linkedin"></i></a>
         <a href="https://github.com/Kishan-kkumar" target="_blank"><i class="fab fa-github"></i></a>
