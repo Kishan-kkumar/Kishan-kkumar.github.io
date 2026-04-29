@@ -31,19 +31,20 @@
    HERO ENTRANCE (after preloader)
    =========================== */
 function startHero() {
-  // Split letters
-  function splitInto(id, text) {
+  function splitInto(id, text, extraClass = '') {
     const el = document.getElementById(id);
     if (!el) return;
+    // Remove gradient-text from container — apply to each letter instead
+    el.classList.remove('gradient-text');
     el.innerHTML = text.split('').map((ch, i) =>
-      `<span class="letter" style="transition-delay:${i * 0.055}s">${ch === ' ' ? '&nbsp;' : ch}</span>`
+      `<span class="letter ${extraClass}" style="transition-delay:${i * 0.055}s">${ch === ' ' ? '&nbsp;' : ch}</span>`
     ).join('');
     el.querySelectorAll('.letter').forEach((l, i) => {
       setTimeout(() => l.classList.add('in'), 50 + i * 55);
     });
   }
   splitInto('nameFirst', 'Kishan');
-  splitInto('nameLast',  'Kumar');
+  splitInto('nameLast',  'Kumar', 'gradient-text');
 
   // Set glitch data attribute
   const glitch = document.getElementById('nameLast');
